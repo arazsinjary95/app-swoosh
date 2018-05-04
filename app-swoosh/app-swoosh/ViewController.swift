@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         */
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //Unwind segue :- in the view controller that we want to go to,when we come back into this view controller what code do we want to be called?, when we said UIStoryboardSegue this only for screen not for code file.
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        //this func will be called when we go back.
+        //then go this view controller that you want to back to here and click button and hit control drag to exit.
     }
-
 
 }
 
