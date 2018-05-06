@@ -52,4 +52,30 @@ class LeagueVC: UIViewController {
         nextBtn.isEnabled = true
     }
     
+    //always prepareForSegue is always called befor view controller on the destination view controller. destination is mean next VC.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            
+            skillVC.player = player
+        }
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

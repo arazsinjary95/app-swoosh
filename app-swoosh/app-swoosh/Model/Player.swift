@@ -12,6 +12,6 @@ import Foundation
 struct Player {
     
     //here we want to store.
-    var desiredLeague: String?
-    var selectSkillLevel: String?
+    var desiredLeague: String!
+    var selectSkillLevel: String!
 }
